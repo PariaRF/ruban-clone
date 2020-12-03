@@ -1,0 +1,135 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In/Up</title>
+
+    <link href="css/bootstrap/bootstrap.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="image/favicon/favicon.ico" rel="icon">
+    <style>
+        body {
+            direction: rtl;
+            text-align: center;
+            align-items: center;
+        }
+        .input{
+            height: 30%;
+            width: 70%;
+            text-align: center;
+            /* margin-right: 15%; */
+            border-radius: 5px;
+            border: 1px #777 solid;
+        }
+        .submit{
+            width: 70%;
+            height: 30%;
+            /* margin-right: 15%; */
+            margin-top: 10px;
+            background-color: #e91e63;
+            color: white;
+            border-radius: 5px;
+            border: none;
+        }
+        @media screen and (max-width: 576px) {
+            .box-desk {
+                display: none;
+            }
+
+            .box-mob {
+                display: block;
+
+            }
+        }
+
+        @media screen and (min-width: 577px) {
+            .box-mob {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- Desktop Header -->
+        <div class="box-desk">
+            <div class="row mt-3">
+                <div class="col-md-4">
+                    <img src="image/imgBody/header/logo.png" alt="Ruban" width="70%" height="80em">
+                </div>
+                <div class="col-md-4">
+                    <form class="form-inline">
+                        <div class="search-box">
+                            <input class="search-txt" type="text" name="search"
+                                placeholder="محصول مورد نظرتان را جستجو کنید">
+                            <a href="#" class="search-btn"><i class="fal fa-search"></i></a>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-4 centered">
+                    <a href="vorod.html">
+                        <button class="btn-vorod">ورود</button>
+                    </a>
+                    <span class="devider"></span>
+                    <a href="vorod.html">
+                        <i class="fal fa-shopping-bag"></i>
+                        <span>سبـد خریـد</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- End Desktop Header -->
+
+         <!-- Mobile Header -->
+         <div class="box-mob">
+            <div class="row">
+                <div class="col-4 centered">
+                    <button type="button" class="navbar-toggle btn-menu" data-toggle="collapse" data-target="#myNavbar">
+                        <span ><i class="fa fa-bars"></i></span>
+                    </button>                   
+                            <a href="#" style="margin: 10px;margin-right: 15px;color: white;"><i class="fa fa-search"></i></a>  
+                </div>
+                <div class="col-4">
+                    <h2>RUBAN</h2>
+                </div>
+                <div class="col-4 centered">
+                    <a href="vorod.html">
+                        <i class="fa fa-user" style="margin: 15px;color: white;"></i>
+                        <i class="fa fa-shopping-bag" style="color: white;"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- End Mobile Heared -->
+    </header>
+    <main>
+        <div class="row">
+            <div class="col-md-6 col-12">
+                <form action="https://ruban.com/registerform" method="POST">
+                    <div class="card" style="width:70%;height: 13rem;margin-top: 40%;margin-right: 20%;">
+                        <div class="card-header" style="background-color: #e91e63;color: white;">فـرم ورود</div>
+                        <div class="card-body">
+                                <input name="firstName" type="text" placeholder="شماره موبایل" class="input" />
+                                <a href="Index.html"><input type="submit" value="ورود" class="submit" /></a>  
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6 col-12">
+                <form action="https://ruban.com/registerform" method="POST">
+                    <div class="card" style="width:70%;height: 13rem;margin-top: 40%;margin-right: 20%;">
+                        <div class="card-header" style="background-color: #e91e63;color: white;">فـرم ثبت نام</div>
+                        <div class="card-body">
+                                <input name="firstName" type="text" placeholder="شماره موبایل" class="input" />
+                                <a href="Index.html"><input type="submit" value="ثبت نام" class="submit" />  </a> 
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
